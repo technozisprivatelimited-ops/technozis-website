@@ -1,0 +1,76 @@
+@import "./mixins.scss";
+@import "./variables.scss";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  background-color: var(--background);
+  transition: 0.5s;
+  overflow-x: hidden;
+}
+
+body.theme-transitioning {
+  transition: background-color 0.5s ease, color 0.5s ease;
+  opacity: 0.8;
+}
+
+.light {
+  background: linear-gradient(180deg, #000000 0%, #0052cb 44.71%, #000000 100%);
+  color: #ffffff;
+}
+
+.dark {
+  background: #0f0f0f;
+  color: #ffffff;
+}
+
+.light,
+.dark {
+  transition: background-color 0.5s ease-in, color 0.5s ease-out;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $font-header;
+  font-weight: $font-medium;
+}
+
+p,
+span,
+a {
+  font-family: $font-primary;
+}
+
+html {
+  color-scheme: dark; // Default light color scheme
+}
+
+@media (prefers-color-scheme: light) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+@include from-tablet {
+  .container {
+    margin: 0 auto;
+    max-width: 768px;
+  }
+
+  .main-wrapper,
+  .content-wrapper {
+    margin: 0 auto;
+    max-width: $website-desktop-maxwidth;
+    // padding: $slice-padding-desktop-2;
+  }
+}
+
+@include for-phone {
+  .main-wrapper {
+    padding: 0 20px;
+  }
+}

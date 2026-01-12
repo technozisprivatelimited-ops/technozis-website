@@ -1,0 +1,13 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
+
+.wrapper {
+  padding: 80px 20px;
+  margin: 0 auto;
+}
+
+@include from-tablet {
+  .wrapper {
+    padding: $slice-padding-desktop;
+  }
+}

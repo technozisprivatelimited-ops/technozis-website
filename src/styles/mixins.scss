@@ -1,0 +1,87 @@
+// Define Graphik font (assuming it's hosted locally or via a licensed CDN)
+// Replace `#{$fonts-path}` with the actual path to your hosted Graphik files if available
+@mixin font-face($name, $url) {
+  @font-face {
+    font-family: #{$name};
+    src: url(#{$url}.woff2) format("woff2"), url(#{$url}.woff) format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+@mixin for-small-phone {
+  @media (max-width: 320px) {
+    @content;
+  }
+}
+
+@mixin for-mid-phone {
+  @media (max-width: 360px) {
+    @content;
+  }
+}
+
+@mixin for-max-400 {
+  @media (max-width: 400px) {
+    @content;
+  }
+}
+
+@mixin for-phone {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin for-tablet {
+  @media (min-width: 768px) and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-mini-desktop {
+  @media (min-width: 768px) and (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin for-phone-tablet {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin from-tablet {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin for-desktop {
+  @media (min-width: 1025px) {
+    @content;
+  }
+}
+
+@mixin for-large-desktop {
+  @media (min-width: 1490px) {
+    @content;
+  }
+}
+
+@mixin for-mini-large-desktop {
+  @media (min-width: 1300px) {
+    @content;
+  }
+}
+
+@mixin for-x-large-desktop {
+  @media (min-width: 1600px) {
+    @content;
+  }
+}
+
+@mixin desktop-config {
+  max-width: $website-desktop-maxwidth;
+  // padding: $slice-padding-desktop-2;
+}

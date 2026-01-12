@@ -1,0 +1,224 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.aboutCompanyWrapper {
+  .heroComponent {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.timelineContainer {
+  background: linear-gradient(180deg, #000000 0%, #0052cb 44.71%, #000000 100%);
+  .timelineWrapper {
+    max-width: $website-desktop-maxwidth;
+    margin: 0 auto;
+
+    .timelineHeader {
+      font-size: 40px;
+      letter-spacing: -0.025em;
+      font-weight: 500;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.timeline {
+  position: relative;
+
+  .line {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #fff;
+    transform: translateX(-50%);
+  }
+
+  .event {
+    position: relative;
+    width: 50%;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    &.left {
+      left: 0;
+      text-align: right;
+    }
+
+    &.right {
+      left: 50%;
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    .content {
+      position: relative;
+      padding: 15px;
+      border-radius: 8px;
+      width: 100%;
+
+      h3 {
+        font-size: 20px;
+        font-weight: 500;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      background: #fff;
+      border-radius: 50%;
+      top: 50%;
+      transform: translateY(-50%);
+      left: calc(100% - 12px);
+      border: 5px solid #2e6edf;
+    }
+
+    &.right::before {
+      left: -12px;
+    }
+  }
+}
+
+.teamSection {
+  text-align: center;
+  background: rgba(0, 0, 0, 1);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  .title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+
+  .teamGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 50px;
+    justify-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+
+    .teamMember {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      .teamImage {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 15px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        background-color: #f0f0f0;
+      }
+
+      .name {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 5px;
+      }
+
+      .role {
+        font-size: 14px;
+        color: #666;
+      }
+    }
+  }
+}
+
+// Tablet
+@include from-tablet {
+  .timelineContainer {
+    .timelineWrapper {
+      padding: $slice-padding-desktop;
+    }
+  }
+
+  .teamSection {
+    padding: $slice-padding-desktop;
+    .teamGrid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+// Mobile
+@include for-phone {
+  .timelineContainer {
+    .timelineWrapper {
+      padding: $slice-padding-phone;
+    }
+  }
+
+  .timeline {
+    .line {
+      left: 20px;
+      transform: none;
+    }
+
+    .event {
+      width: 100%;
+      padding-left: 50px;
+      padding-right: 20px;
+      align-items: flex-start !important;
+      text-align: left !important;
+
+      &::before {
+        left: 9px !important;
+      }
+
+      &.left,
+      &.right {
+        left: 0 !important;
+        text-align: left !important;
+        align-items: flex-start !important;
+      }
+    }
+  }
+
+  .teamSection {
+    padding: $slice-padding-phone;
+
+    .teamGrid {
+      grid-template-columns: repeat(2, 1fr);
+      .teamMember {
+        .teamImage {
+          width: 150px;
+          height: 150px;
+        }
+      }
+
+      .teamMember:nth-last-child(1):nth-child(odd) {
+        grid-column: span 2;
+        justify-self: center;
+      }
+    }
+  }
+}
+
+// Desktop
+@include for-desktop {
+  .teamSection {
+    .teamGrid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}

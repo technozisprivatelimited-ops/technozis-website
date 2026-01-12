@@ -1,0 +1,41 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/variables.scss";
+
+@include for-phone {
+  .servicesSection {
+    flex-direction: column;
+    padding: $slice-padding-phone-sm;
+    .card {
+      min-height: 258px;
+
+      .content {
+        h2 {
+          font-size: 24px;
+        }
+        p {
+          font-size: 14px;
+        }
+        span {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  .offeringsWrapper {
+    .inner {
+      .flexbox {
+        display: block;
+        .card {
+          max-width: 100%;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
+
+@include from-tablet {
+  .servicesSection {
+    height: 550px;
+  }
+}

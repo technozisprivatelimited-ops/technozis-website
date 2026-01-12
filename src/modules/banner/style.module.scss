@@ -1,0 +1,87 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.bannerSection {
+  height: 506px;
+  background-image: url("/static/images/scale-landing-bg.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  width: 100%;
+
+  .bannerContent {
+    max-width: $website-desktop-maxwidth;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .actionButton {
+      background-color: #007bff; // Blue button
+      color: white;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: #0056b3; // Darker blue on hover
+      }
+    }
+  }
+}
+
+@include for-phone {
+  .bannerSection {
+    background-image: url("/static/images/scale-landing-bg-mobile.svg");
+
+    .bannerContent {
+      .textContainer {
+        padding: $slice-padding-phone;
+
+        h1 {
+          font-size: 30px;
+        }
+
+        p {
+          font-size: 1rem;
+          margin-bottom: 4rem;
+        }
+      }
+    }
+  }
+}
+
+@include from-tablet {
+  .bannerSection {
+    color: #fff;
+
+    .bannerContent {
+      .textContainer {
+        width: auto;
+        padding: 0 0 0 96px;
+      }
+    }
+  }
+}

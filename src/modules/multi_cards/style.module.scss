@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #121212;
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.card {
+  background: #1f1f1f;
+  border-radius: 8px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  h3 {
+    margin: 0 0 1rem 0;
+    font-size: 1.5rem;
+  }
+
+  p {
+    margin: 0;
+    font-size: 1rem;
+    color: #b0b0b0;
+  }
+
+  &Image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+  }
+}

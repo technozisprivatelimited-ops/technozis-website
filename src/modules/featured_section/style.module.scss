@@ -1,0 +1,119 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
+
+.featuredContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  color: #ffffff;
+  background-image: url("/static/images/gen-ai-section.png");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+  border-radius: 20px;
+  margin: 112px auto;
+  max-width: $website-desktop-maxwidth;
+  min-height: 100vh;
+}
+
+/* General Content Styling */
+.featuredContent {
+  max-width: 50%;
+  @media (max-width: 768px) {
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+
+/* Highlight Section */
+.highlightSection {
+  border-radius: 8px;
+}
+
+/* Title Styling */
+.featuredTitle {
+  font-weight: bold;
+  margin-bottom: 2rem;
+  line-height: 57.6px;
+}
+
+/* Description Styling */
+.featuredDescription {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+/* Button Styling */
+.featuredButton {
+  background-color: #ffffff;
+  color: #061c3f;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #f0f0f0;
+  }
+}
+
+/* Image Section */
+.featuredImageContainer {
+  max-width: 40%;
+
+  @media (max-width: 768px) {
+    max-width: 80%;
+  }
+}
+
+.highlightImage {
+  color: transparent;
+  border-radius: 12px;
+  padding: 8px;
+}
+
+.featuredImage {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+@include for-phone {
+  .featuredContainer {
+    padding: 30px;
+    flex-direction: column;
+
+    background-image: url("/static/images/gen-ai-section-mobile.png");
+
+    .featuredContent {
+      position: static;
+      margin-top: auto;
+    }
+    .featuredTitle {
+      font-size: 30px;
+      line-height: 39px;
+    }
+
+    .featuredButton {
+      width: 100%;
+    }
+  }
+}
+
+@include from-tablet {
+  .featuredContainer {
+    padding: 64px;
+
+    .featuredContent {
+      margin-left: 50%;
+    }
+
+    .featuredTitle {
+      font-size: 48px;
+    }
+  }
+}

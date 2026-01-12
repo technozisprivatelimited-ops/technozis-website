@@ -1,0 +1,114 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
+
+.quickViewCards {
+  .heading {
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 48px;
+    width: 100%;
+  }
+
+  .cardsWrapper {
+    margin-top: 80px;
+    display: grid;
+    grid-column-gap: 24px;
+    grid-row-gap: 20px;
+
+    .cardContainer {
+      padding: 20px;
+      border-radius: 20px;
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.12);
+      }
+      .cardIcon {
+        margin-bottom: 32px;
+        min-height: 64px;
+        max-height: 64px;
+        min-width: 64px;
+        max-width: 64px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .cardImg {
+          height: 30px;
+          width: 30px;
+        }
+
+        .fullSizeImg {
+          height: 100%;
+          width: 100%;
+        }
+      }
+
+      .cardTitle {
+        margin-bottom: 16px;
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 16px;
+        font-weight: 500;
+      }
+
+      .cardDescription {
+        line-height: 22.4px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@include for-phone {
+  .quickViewCards {
+    .quickViewCardsSection {
+      padding: $slice-padding-phone;
+    }
+
+    .cardsWrapper {
+      grid-template-columns: 1fr;
+      margin-top: 4 0px;
+      .cardContainer {
+        padding: 10px 0px;
+
+        &.withBorder {
+          padding: 20px;
+        }
+      }
+    }
+  }
+}
+
+@include from-tablet {
+  .quickViewCards {
+    .quickViewCardsSection {
+      max-width: $website-desktop-maxwidth;
+      padding: 112px 76px;
+      margin: 0 auto;
+      .headerSection {
+        display: flex;
+        .heading {
+          flex: 1 1 1;
+          padding-left: 20px;
+        }
+      }
+
+      .cardsWrapper {
+        &.columns3 {
+          grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        &.columns4 {
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+      }
+    }
+  }
+}
+
+@include for-tablet {
+  .cardsWrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}

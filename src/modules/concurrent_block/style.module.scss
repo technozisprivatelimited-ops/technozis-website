@@ -1,0 +1,82 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.concurrentContent {
+  .contentWrapper {
+    align-items: center;
+    max-width: $website-desktop-maxwidth;
+    justify-content: space-between;
+
+    &.leftAligned {
+      flex-direction: row;
+    }
+
+    &.rightAligned {
+      flex-direction: row-reverse;
+    }
+  }
+
+  .image {
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 24px;
+  }
+
+  .textContent {
+    flex: 1;
+
+    .subTitle {
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    h1 {
+      font-size: 30px;
+      margin-bottom: 1rem;
+      letter-spacing: -0.025em;
+      font-weight: 500;
+    }
+
+    .description {
+      font-size: 1rem;
+      letter-spacing: -0.3px;
+
+      p {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+@include from-tablet {
+  .concurrentContent {
+    .contentWrapper {
+      padding: $slice-padding-desktop;
+
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      margin: 0 auto;
+      max-width: $website-desktop-maxwidth;
+      // padding: $slice-padding-desktop-2;
+    }
+
+    .textContent {
+      h1 {
+        font-size: 42px;
+      }
+    }
+  }
+}
+
+@include for-phone {
+  .concurrentContent {
+    .contentWrapper {
+      padding: $slice-padding-phone;
+    }
+
+    .textContent {
+      margin-bottom: 20px;
+    }
+  }
+}

@@ -1,0 +1,258 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+.footerContainer {
+  color: #fff;
+  max-width: $website-desktop-maxwidth;
+  margin: 0 auto;
+
+  .footerContent {
+    display: flex;
+    flex-wrap: wrap; // Allow content to wrap to the next ro
+    gap: 20px; // Add spacing between rows and columns
+
+    .logo {
+      font-weight: bold;
+      margin-bottom: 16px;
+      flex: 1 1 100%; // Ensure logo spans the entire row
+      margin-top: -20px;
+
+      .brandLogo {
+        height: 64px;
+        min-width: 200px;
+        max-width: 240px;
+      }
+    }
+
+    .brandPromotion {
+      font-size: 16px;
+      line-height: 20px;
+      color: rgba(175, 175, 175, 1);
+      font-weight: 400;
+      margin: 10px 0 20px 0;
+    }
+
+    .footerLinks {
+      display: flex;
+      cursor: pointer;
+
+      .iconWithTooltip {
+        position: relative;
+        display: inline-block;
+        margin-right: 24px;
+
+        .tooltip {
+          display: none;
+          position: absolute;
+          bottom: 110%; // Appears above the icon
+          left: 50%;
+          transform: translateX(-50%);
+          background-color: #ffffff;
+          color: #000000;
+          padding: 4px 8px;
+          border-radius: 4px;
+          font-size: 12px;
+          white-space: nowrap;
+          z-index: 10;
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        &:hover .tooltip {
+          display: block;
+        }
+      }
+
+      .iconsBox {
+        width: 35;
+        height: 34;
+        border-radius: 4px;
+        background: rgba(60, 60, 60, 1);
+        padding: 8px;
+
+        img {
+          height: 17px;
+        }
+      }
+    }
+
+    .contactInfo {
+      margin-top: 96px;
+      border-left: 6px solid rgba(35, 136, 255, 1);
+      padding-left: 24px;
+      .locations {
+        font-size: 18px;
+        font-weight: 700;
+      }
+      .address {
+        margin-top: 12px;
+        color: rgba(155, 155, 155, 1);
+        font-size: 16px;
+        font-weight: normal;
+      }
+
+      .email {
+        margin-top: 12px;
+      }
+    }
+
+    .contentWrapper {
+      cursor: pointer;
+      // min-width: 200px; // Set a minimum width for responsiveness
+      text-align: left;
+
+      .title {
+        font-size: 16px;
+        line-height: 25.6px;
+        font-weight: 500;
+        margin-bottom: 24px;
+      }
+
+      .listItem {
+        margin-bottom: 16px;
+        position: relative;
+        transition: color 0.3s ease;
+        width: fit-content;
+        color: rgba(255, 255, 255, 1);
+        opacity: 0.78;
+
+        &:hover {
+          color: #fff;
+
+          &::after {
+            width: 100%;
+          }
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 0;
+          height: 2px;
+          background-color: #fff;
+          transition: width 0.3s ease;
+        }
+      }
+    }
+  }
+
+  hr {
+    max-width: $website-desktop-maxwidth;
+    margin: 20px auto;
+    height: 2px;
+    border-radius: 20px;
+  }
+
+  .bottomSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+
+    .copyrightSection {
+    }
+
+    .terms {
+      text-decoration: underline;
+    }
+  }
+}
+
+/* Mobile (reduce to one column) */
+@include for-phone {
+  .footerContainer {
+    padding: 32px 20px;
+
+    .footerContent {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); // 🔹 Two segments per row
+      gap: 1.5rem 2rem; // 🔹 row-gap column-gap
+
+      .logo {
+        grid-column: span 2; // Full-width for logo
+        font-size: 20px;
+
+        .brandLogo {
+          height: 40px;
+          min-width: 140px;
+          max-width: 160px;
+        }
+      }
+
+      .contentWrapper {
+        flex: unset; // Remove flex properties
+        min-width: 0; // Let grid handle width
+        width: 100%;
+
+        .title {
+          font-size: 14px;
+          margin-bottom: 16px;
+        }
+
+        .listItem {
+          font-size: 14px;
+          margin-bottom: 12px;
+        }
+      }
+
+      .contactInfo {
+        margin-top: 56px;
+        border-left: 4px solid rgba(35, 136, 255, 1);
+        padding-left: 20px;
+        .locations {
+          font-size: 16px;
+        }
+        .address {
+          font-size: 14px;
+        }
+        .email {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .bottomSection {
+      flex-direction: column;
+      text-align: center;
+      font-size: 16px;
+      .copyrightSection {
+        color: #666;
+      }
+    }
+  }
+}
+
+/* Tablet (reduce to two columns) */
+@include from-tablet {
+  .footerContainer {
+    padding: $slice-padding-desktop;
+
+    .footerContent {
+      flex-wrap: wrap; // Ensure wrapping behavior
+      gap: 2rem;
+
+      .logo {
+        margin-right: 100px;
+      }
+
+      .contentWrapper {
+        flex: 1 1 calc(50% - 2rem); // Two columns
+        text-align: left;
+
+        .listItem {
+          max-width: fit-content;
+        }
+      }
+    }
+  }
+}
+
+/* Desktop (four columns) */
+@include for-desktop {
+  .footerContainer {
+    .footerContent {
+      flex-wrap: nowrap; // Disable wrapping
+      justify-content: space-between;
+    }
+  }
+}

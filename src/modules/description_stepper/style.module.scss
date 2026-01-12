@@ -1,0 +1,156 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.descriptionStepperContainer {
+  color: #fff;
+
+  .leftSection {
+    overflow: hidden;
+
+    .containerHeading {
+      h2 {
+        font-size: 36px;
+        margin-bottom: 10px;
+        transition: opacity 0.3s ease-in-out;
+      }
+
+      p {
+        color: #ffffffcc;
+      }
+    }
+  }
+
+  .rightSection {
+    section {
+      min-height: 100vh;
+      color: #000;
+      border-radius: 8px;
+      margin-bottom: 10px;
+
+      h2 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 1rem;
+        line-height: 1.6;
+      }
+    }
+  }
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  color: #eee;
+
+  .timelineItem {
+    width: 100%;
+    display: flex;
+    gap: 40px;
+    position: relative;
+    min-height: 196px;
+    margin-bottom: 16px;
+    overflow-wrap: break-word;
+
+    .iconWrapper {
+      color: #fff;
+      border-radius: 50%;
+      padding: 10px;
+      font-size: 1.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-width: 80px;
+      max-width: 80px;
+      height: 80px;
+      flex: 1 1;
+
+      background: linear-gradient(
+          0deg,
+          rgba(255, 255, 255, 0.12),
+          rgba(255, 255, 255, 0.12)
+        ),
+        linear-gradient(223.15deg, #00f1e0 3.02%, #0034e4 59.44%, #001d7e 98.6%);
+    }
+
+    .content {
+      border-radius: 8px;
+
+      h3 {
+        margin-bottom: 16px;
+        line-height: 30px;
+        font-size: 20px;
+        font-weight: 500;
+      }
+
+      p {
+        margin: 0.5rem 0 0;
+        line-height: 1.6;
+      }
+    }
+
+    .line {
+      position: absolute;
+      min-height: 100px;
+      width: 2px;
+      background-color: #262626;
+      transform: translateY(80%);
+      margin-left: 39px;
+      margin-top: 16px;
+    }
+  }
+}
+
+@include for-phone-tablet {
+  .descriptionStepperContainer {
+    padding: $slice-padding-phone;
+  }
+  .timeline {
+    margin-top: 40px;
+    .timelineItem {
+      gap: 20px;
+      .iconWrapper {
+        height: 50px;
+        min-width: 50px;
+        max-width: 50px;
+      }
+      .content {
+        h3 {
+          margin-bottom: 16px;
+          line-height: 26px;
+          font-size: 16px;
+        }
+        p {
+          font-size: 14px;
+          line-height: 22px;
+        }
+      }
+    }
+  }
+}
+
+@include for-desktop {
+  .descriptionStepperContainer {
+    .descriptionStepper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      margin: 0 auto;
+      max-width: $website-desktop-maxwidth;
+      padding: $slice-padding-desktop;
+    }
+    .leftSection {
+      .containerHeading {
+        h2 {
+          width: 90%;
+        }
+
+        p {
+          width: 70%;
+        }
+      }
+    }
+  }
+}

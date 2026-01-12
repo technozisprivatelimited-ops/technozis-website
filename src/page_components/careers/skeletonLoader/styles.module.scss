@@ -1,0 +1,96 @@
+@import "../../../styles/mixins.scss";
+
+.wrapper {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+
+  .card {
+    background: #1a1a1a;
+    border-radius: 16px;
+    padding: 24px;
+    width: 500px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 0 1px #2d2d2d;
+
+    .title,
+    .description,
+    .dots span,
+    .button {
+      animation: pulse 1.6s infinite ease-in-out;
+      background: #2d2d2d;
+      border-radius: 6px;
+    }
+
+    .title {
+      height: 22px;
+      width: 75%;
+    }
+
+    .description {
+      height: 16px;
+      width: 90%;
+      margin-top: 8px;
+
+      &:last-of-type {
+        width: 60%;
+      }
+    }
+
+    .dots {
+      display: flex;
+      gap: 12px;
+      margin-top: 12px;
+
+      span {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+      }
+    }
+
+    .buttons {
+      display: flex;
+      gap: 16px;
+      margin-top: auto;
+
+      .button {
+        height: 44px;
+        border-radius: 12px;
+        flex: 1;
+
+        &.primary {
+          background: #0047ff;
+          opacity: 0.3;
+        }
+
+        &.secondary {
+          background: #ffffff;
+          opacity: 0.2;
+        }
+      }
+    }
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@include for-phone {
+  .wrapper {
+      flex-direction: column;
+    .card {
+      width: 100%;
+    }
+  }
+}

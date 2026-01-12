@@ -1,0 +1,72 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.scrollingWrapper {
+  background: linear-gradient(
+    0.73deg,
+    #0f0f0f 3.35%,
+    rgba(33, 33, 33, 0) 99.42%
+  );
+  overflow: hidden;
+  white-space: nowrap;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  .scrollingContainer {
+    padding: 95px 0 65px;
+    overflow: hidden;
+
+    .scrollingContent {
+      display: flex;
+      align-items: center;
+      gap: 80px;
+      animation: scroll 1.5s linear infinite; // Adjust speed here
+      height: 40px;
+    }
+
+    .logoWrapper {
+      flex-shrink: 0;
+      padding: 10px;
+
+      img {
+        width: 100%;
+        display: block;
+        max-height: 40px;
+      }
+    }
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+// Responsive overrides
+@include from-tablet {
+  .scrollingWrapper {
+    .scrollingContainer {
+      padding: 95px 0 65px;
+
+      .scrollingContent {
+        animation: scroll 30s linear infinite;
+      }
+    }
+  }
+}
+
+@include for-phone {
+  .scrollingWrapper {
+    .scrollingContainer {
+      .scrollingContent {
+        animation: scroll 10s linear infinite; // Slower scroll for smaller devices
+      }
+    }
+  }
+}

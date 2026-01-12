@@ -1,0 +1,245 @@
+// Font Variables
+$font-primary: 'Poppins', sans-serif; // Default font family
+$font-header: 'Exo 2', sans-serif;
+$font-regular: 400; // Regular weight
+$font-medium: 500; // Medium weight
+$font-bold: 700; // Bold weight
+
+// Font Sizes
+$font-size-xxs: 0.571em; // default: 8px
+$font-size-xs: 0.714em; // default: 10px
+$font-size-11: 0.785em; // default: 11px
+$font-size-sm: 0.857em; // default: 12px
+$font-size-13: 0.928em; // default: 13px
+$font-size-md: 1em; // default: 14px
+$font-size-15: 1.07em; // default 15px
+$font-size-lg: 1.143em; // default: 16px
+$font-size-xg: 1.286em; // default: 18px
+$font-size-xxg: 1.429em; // default: 20px
+$font-size-xxxg: 1.571em; // default: 22px
+$font-size-24: 1.714em; // default: 24px
+$font-size-26: 1.857em; // default: 26px
+$font-size-xxxxg: 1.95em; // default: 27px
+$font-size-28: 2em; // default: 28px
+$font-size-30: 2.143em; // default: 30px
+$font-size-xxlg: 2.29em; // default: 32px
+$font-size-34: 2.428em; // default: 34px
+$font-size-36: 2.571em; // default: 36px
+$font-size-38: 2.71em; //default: 38px
+$font-size-40: 2.857em; // default: 40px
+$font-size-42: 3em; // default: 42px
+$font-size-44: 3.143em; // default: 44px
+$font-size-46: 3.289em; // default: 46px
+$font-size-48: 3.428em; // default: 48px
+$font-size-50: 3.6em; // default: 50px
+$font-size-54: 3.8em; //default : 54px
+$font-size-56: 4em; //default : 56px
+$font-size-60: 4.28em; // default 60px
+$font-size-64: 4.57em; //default 64px
+$font-size-66: 4.71em; //default 66px
+
+$website-desktop-maxwidth: 1400px;
+$website-mobile-maxwidth: 768px;
+$base-padding: 40px 60px;
+
+// Colors
+
+$primary-color: #ffffff;
+$secondary-color: #6e6e6e;
+$highlight-color: #0070f3;
+$stepper-active-color: #ffffff;
+$line-color-active: #0070f3; // Color for active line section
+$line-color-secondary: #6e6e6e; // Default color for inactive line sections
+$inactive-color: #777; // Gray color for inactive steps
+$active-color: #fff; // White color for active text
+$active-background: #004dc9; // Blue background for active state
+$transition-duration: 0.8s; // Adjust transition duration as needed
+$bg-effect-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+// Blacks
+$black-1: #000;
+$black-2: #0f0f0f;
+
+// Color Variables
+$black-1: #212121;
+$black-light: #2e2e2e;
+$blue: #2e6edf;
+$blue-light: #3dbef8;
+$blue-light-bg: rgba(46, 110, 223, 0.08);
+$blue-dark: #2961c4;
+$gray: #444;
+$gray-light: #828282;
+$light-gray: #f8f8f8;
+$gray-extra-light: #fafafa;
+$silver: #aaa;
+$silver-extra-dark: #666;
+$silver-dark: #888;
+$white: #fff;
+$red: red;
+$cyan: #3bd3e6;
+$placeholder: #ccc;
+$white-hover: #eee;
+$green: #66cc80;
+$teal: #41bfad;
+$blue-lighter: #56a8f7;
+$indigo: #6c7bd4;
+$violet: #8a62d6;
+$secondary: #a3a3a8;
+$primary: #0f0f0f;
+$disabled: #333;
+$brand-20: #2137b4;
+$info: #a8ccf8;
+$surface-2: #1b1b1b;
+$gray-60: #a3a3a3;
+$blue-90: #c0dcff;
+
+// Background Colors
+$bg-dark: #0f0f0f;
+$bg-secondary-dark: #262626;
+$bg-light: #fff;
+$bg-light-blue: #e9f3ff;
+$bg-blue: #2138b4;
+$bg-hero: #004dc9;
+$bg-section: #ededed;
+$bg-tag: #d9d9d9;
+$bg-blue-90: #7ba5ef;
+$bg-main-color: rgba(0, 52, 228, 1);
+
+// Text Colors
+$text-primary-white: #fff;
+$text-primary-black: #0f0f0f;
+$text-secondary-white: #ededed;
+$text-secondary-black: #444;
+
+// Button Colors
+$btn-bg-hero: #2f6ae3;
+$btn-bg-hero-hover: #004dc9;
+$btn-bg-primary: #936565;
+$btn-bg-secondary-hover: #262626;
+$btn-color-primary: $white;
+$btn-bg-color-primary: $blue;
+$btn-color-primary-hover: $white;
+$btn-bg-color-primary-hover: $blue-dark;
+$btn-color-secondary: $blue;
+$btn-bg-color-secondary: $white;
+$btn-color-secondary-hover: $blue-dark;
+$btn-bg-color-secondary-hover: $white;
+$btn-color-white: $white;
+$btn-bg-color-transparent: transparent;
+$btn-color-transparent: $white;
+$btn-radius: 4px;
+
+// Card & Shadow
+$card-bg-primary: #f8f8fe;
+$card-bg-secondary: #323232;
+$shadow-card: hsla(210, 8%, 62%, 0.2) 0px 8px 24px;
+$shadow-card-hover: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+  rgba(0, 0, 0, 0.04) 0px 10px 10px 15px;
+$shadow-box: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+  rgba(17, 17, 26, 0.1) 0px 0px 8px;
+
+// Gradients
+$gradient-purple-to-blue: linear-gradient(90deg, #6c7bd4, #56a8f7);
+
+// Font Sizes
+$fz-paragraph: 16px;
+$fz-paragraph-xs: 12px;
+$lh-paragraph-xs: 18px;
+$fz-paragraph-sm: 14px;
+$fz-paragraph-lg: 18px;
+$lh-paragraph-lg: 27px;
+$lh-paragraph: 1.5;
+$lh-heading: 1.5;
+$fz-h1: 48px;
+$fz-h2: 28px;
+$fz-h3: 20px;
+$fz-h4: 16px;
+$fz-h5: 16px;
+$fz-h6: 16px;
+$btn-fz: 16px;
+$btn-ls: 0.04em;
+$btn-x: 1em;
+$btn-y: 1.5em;
+
+// Spacing & Layout
+$container-width: 1208px;
+$container-wide-width: 1440px;
+$card-radius: 8px;
+$border-radius-sm: 4px;
+$border-radius-md: 8px;
+$border-radius-lg: 16px;
+$border-radius-round: 100px;
+$border-radius-circle: 50%;
+$card-border-color: #eee;
+$gutter: 32px;
+
+// Chip Colors
+$chip-color-primary: #41bfad;
+$chip-color-secondary: #56a8f7;
+$chip-color-tertiary: #6c7bd4;
+$chip-shadow: 0px 2px 4px rgba(0, 0, 0, 0.078);
+$chip-shadow-hover: hsla(210, 8%, 62%, 0.2) 0px 8px 24px;
+
+// Padding
+$slice-padding-desktop: 112px 96px;
+$slice-padding-desktop-2: 0px 96px;
+$slice-padding-desktop-xs: 48px 64px;
+$slice-padding-desktop-sm: 80px 64px;
+$slice-padding-desktop-l: 136px 64px;
+$slice-padding-desktop-xl: 160px 64px;
+$slice-padding-desktop-xxl: 192px 64px;
+$slice-padding-desktop-xxxl: 224px 64px;
+$slice-padding-tablet: 80px 64px;
+$slice-padding-tablet-xs: 48px 64px;
+$slice-padding-tablet-sm: 64px 64px;
+$slice-padding-tablet-l: 96px 64px;
+$slice-padding-tablet-xl: $slice-padding-desktop;
+$slice-padding-tablet-xxl: 136px 64px;
+$slice-padding-tablet-xxxl: 160px 64px;
+$slice-padding-phone: 64px 20px;
+$slice-padding-phone-xs: 32px 20px;
+$slice-padding-phone-sm: 48px 20px;
+$slice-padding-phone-l: 80px 20px;
+$slice-padding-phone-xl: 96px 20px;
+$slice-padding-phone-xxl: 120px 20px;
+$slice-padding-phone-xxxl: 146px 20px;
+
+// Header & Fonts
+$header-height: 72px;
+$cubic-transition: cubic-bezier(0.42, 0, 0.58, 1);
+$bg-effect-transition-delay: 1.5s;
+$bg-effect-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+// Extra Font Sizes for Responsive Design
+$fz-xl-heading-desktop: 60px;
+$fz-l-heading-desktop: 52px;
+$fz-l-v2-heading-desktop: 56px;
+$lh-l-v2-desktop: 78.4px;
+$fz-h1-desktop: 46px;
+$fz-h2-desktop: 34px;
+$lh-h2-desktop: 47.6px;
+$ls-h2-desktop: -0.5px;
+$lh-h2-desktop-55_2: 55.2px;
+$ls-h2-desktop-0_92: -0.92px;
+$lh-xl-desktop: 84px;
+$lh-l-desktop: 72.8px;
+$lh-h1-desktop: 64.4px;
+$ls-h1-desktop: -1.2px;
+$fz-h1-phone-v2: 30px;
+$lh-h1-phone: 39px;
+$fz-h2-phone-v2: 26px;
+$lh-h2-phone: 33.8px;
+$heading-fw-500: 500;
+$heading-fw-600: 600;
+$fz-h4-desktop: 20px;
+$lh-h4-desktop: 30px;
+$fz-p-phone: 14px;
+$lh-p-phone: 22.4px;
+$fz-sub-heading: 16px;
+$lh-sub-heading: 25.6px;
+$paragraph-fw-400: 400;
+$fz-h3-desktop: 28px;
+$lh-h3-desktop: 42px;
+$ls-h3-desktop: -0.5px;
+$fz-h3-phone-v2: 24px;
+$lh-h3-phone: 31.2px;

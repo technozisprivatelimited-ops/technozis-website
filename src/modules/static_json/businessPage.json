@@ -1,0 +1,360 @@
+{
+  "data": [
+    {
+      "pageName": "businessEngagement",
+      "redirectionUrl": "/services/business-engagement",
+      "sections": [
+        {
+          "index": 1,
+          "type": "primaryData",
+          "data": {
+            "main": {
+              "title": "Business <br /> Engagement Models",
+              "description": "At Technozis, we provide flexible engagement models that align </br>with your business needs. Whether you're looking for specialized </br>IT expertise, proactive management of your technology environment, </br>or end-to-end digital transformation guidance, we've got you covered.",
+              "subTitle": "",
+              "buttonTxt": "Get Started",
+              "bgMainImg": {
+                "desktop": "/static/images/business/hero-banner.svg",
+                "mobile": "/static/images/business/hero-banner-mobile.svg"
+              },
+              "titleSize": "42px"
+            }
+          }
+        },
+        {
+          "index": 2,
+          "type": "servicesSection",
+          "data": [
+            {
+              "variant": "primary",
+              "title": "Professional Services",
+              "subTitle": "Services",
+              "description": "On-demand IT experts to extend your team for short-term or project-based needs.",
+              "imageSrc": "/static/images/business/business-1.svg",
+              "href": "/services/professional",
+              "bgColor": "#0034E4"
+            },
+            {
+              "variant": "dark",
+              "title": "Managed IT",
+              "subTitle": "Services",
+              "description": "Proactive monitoring, patching, and support to keep your stack humming.",
+              "imageSrc": "/static/images/business/business-2.svg",
+              "href": "/services/managed-it",
+              "bgColor": "#5137E4"
+            },
+            {
+              "variant": "dark",
+              "title": "Digital",
+              "subTitle": "Transformation Consulting",
+              "description": "Strategy to execution — modernize platforms, processes, and culture.",
+              "imageSrc": "/static/images/business/business-3.svg",
+              "href": "/services/digital-transformation",
+              "bgColor": "#8A38F5"
+            }
+          ]
+        },
+
+        {
+          "index": 3,
+          "type": "concurrentContent",
+          "data": {
+            "imgAlignment": "right",
+            "imgUrl": "/static/images/business/section-3.svg",
+            "bgColor": "#0B51F5",
+            "subTitle": "Professional Services",
+            "title": "Unlock Expert IT Talent with On-Demand Professional Services",
+            "descriptionHtml": "<div style=\"background:#0B51F5; color:#E6EEFF;\">\n  <p style=\"margin:0 0 18px; font-size:16px; line-height:1.7;\">\n    At Technozis, our Professional Services model offers you flexible access to skilled IT experts who work as an extension of your team—delivering value precisely where and when you need it.\n  </p>\n  <p style=\"margin:0; font-size:18px; line-height:1.7;\">\n    We specialize in project-based and resource-based engagements, helping businesses scale, innovate, and optimize without the overhead of long-term hiring cycles. Whether you’re launching a new initiative, need specific technical expertise, or require short-term support, our professional services ensure agility, speed, and quality delivery.\n  </p>\n</div>"
+          }
+        },
+        {
+          "index": 4,
+          "type": "dataCards",
+          "data": {
+            "title": "Our Engagement Models",
+            "cards": [
+              {
+                "title": "Time & Material",
+                "description": "Need extra hands for your project? We provide certified and experienced IT professionals across a range of technologies and domains. Scale your team up or down based on your project timeline and goals.",
+                "points": [
+                  "Fast onboarding",
+                  "Cost-effective resources",
+                  "Full-time or part-time engagement options"
+                ],
+                "imgUrl": "/static/images/business/section-16-1.svg"
+              },
+              {
+                "title": "Project-Based Delivery",
+                "description": "From planning to execution, our consultants can manage end-to-end delivery of your IT projects, ensuring alignment with your business goals.",
+                "points": [
+                  "Clear scope and milestones",
+                  "Transparent delivery model",
+                  "Outcome-driven engagement"
+                ],
+                "imgUrl": "/static/images/business/section-16-2.svg"
+              },
+              {
+                "title": "Advisory & Consulting",
+                "description": "Our senior consultants and domain experts offer strategic guidance and technical insights to help you make informed decisions and define the right technology roadmap.",
+                "points": [
+                  "System assessments and gap analysis",
+                  "Solution architecture and design",
+                  "IT transformation advisory"
+                ],
+                "imgUrl": "/static/images/business/section-16-3.svg"
+              }
+            ]
+          }
+        },
+        {
+          "index": 5,
+          "type": "concurrentContent",
+          "data": {
+            "imgAlignment": "left",
+            "title": "Why Choose Our Professional Services?",
+            "imgUrl": "/static/images/business/section-5.svg",
+            "bgColor": "#000000",
+            "descriptionHtml": "\n<div style='color:#EAEAEA; line-height:1.7;'>\n  <style>\n    @media (max-width: 768px) {\n      .service-list { grid-template-columns: 1fr !important; }\n    }\n  </style>\n  <ul class='service-list' style='list-style:none; padding:0; margin:0; display:grid; grid-template-columns:repeat(2,1fr); gap:32px 48px;'>\n    <li>\n      <div style='font-weight:700; margin-bottom:6px;'>✔ Domain Expertise</div>\n      <div style='font-size:14px;'>Deep experience across ITSM, ERP, cloud, infrastructure, and more.</div>\n    </li>\n    <li>\n      <div style='font-weight:700; margin-bottom:6px;'>✔ Rapid Deployment</div>\n      <div style='font-size:14px;'>Access talent quickly without lengthy hiring processes.</div>\n    </li>\n    <li>\n      <div style='font-weight:700; margin-bottom:6px;'>✔ Flexible Engagement Models</div>\n      <div style='font-size:14px;'>Choose from hourly, daily, or monthly billing — or set project scope with fixed deliverables.</div>\n    </li>\n    <li>\n      <div style='font-weight:700; margin-bottom:6px;'>✔ Proven Track Record</div>\n      <div style='font-size:14px;'>Delivered projects across industries including healthcare, finance, manufacturing, and public sector.</div>\n    </li>\n    <li>\n      <div style='font-weight:700; margin-bottom:6px;'>✔ Scalable Solutions</div>\n      <div style='font-size:14px;'>Adapt your resource needs to match business demands.</div>\n    </li>\n  </ul>\n</div>\n"
+          }
+        },
+        {
+          "index": 6,
+          "type": "concurrentText",
+          "data": {
+            "title": "Our Areas Of Expertise",
+            "description": "ServiceNow | Oracle ERP & SCM | Cloud Migrations (AWS, Azure, GCP) | Enterprise Application Integration | IT Infrastructure | DevOps | Cybersecurity",
+            "background": "#000000"
+          }
+        },
+        {
+          "index": 7,
+          "type": "concurrentText",
+          "data": {
+            "title": "Let’s Build Together",
+            "description": "Every organization’s needs are different. We work with you to craft a service engagement that aligns with your objectives—be it supplementing your workforce, executing a full-scale deployment, or bridging temporary skill gaps.",
+            "background": "#0046E8",
+            "buttonText": "Let’s Talk",
+            "redirectionLink": "/contact",
+            "applyBgToParent": false
+          }
+        },
+        {
+          "index": 8,
+          "type": "concurrentContent",
+          "data": {
+            "imgAlignment": "left",
+            "imgUrl": "/static/images/business/section-8.svg",
+            "bgColor": "#5A3DF5",
+            "subTitle": "Managed IT Services",
+            "title": "Proactive, Scalable, and Secure IT Management So You Can Focus on Growth",
+            "descriptionHtml": "<div style='color:#FFFFFF; line-height:1.6;'>\n  <p style='margin:0; font-size:16px;'>\n    In today’s digital world, technology is the backbone of your business. But managing it internally can drain resources and distract from your core objectives. That’s where we come in.\n  </p>\n</div>"
+          }
+        },
+
+        {
+          "index": 9,
+          "type": "dataCards",
+          "data": {
+            "title": "Our Core Offerings",
+            "cards": [
+              {
+                "title": "Network & Infrastructure Management",
+                "description": "We monitor and maintain your servers, networks, and systems to ensure performance, uptime, and security.",
+                "points": [
+                  "Real-time monitoring & alerts",
+                  "Patch management & upgrades",
+                  "Network health and optimization"
+                ],
+                "imgUrl": "/static/images/business/core-offering-1.svg"
+              },
+              {
+                "title": "Cloud Management Services",
+                "description": "Whether you’re on AWS, Azure, or hybrid cloud—we handle deployments, scaling, and ongoing optimization.",
+                "points": [
+                  "Cloud migration & modernization",
+                  "Cost and performance optimization",
+                  "Backup & disaster recovery setup"
+                ],
+                "imgUrl": "/static/images/business/core-offering-2.svg"
+              },
+              {
+                "title": "Backup & Disaster Recovery",
+                "description": "Ensure business continuity with automated backups, failover strategies, and tested recovery plans.",
+                "points": [
+                  "On-prem, cloud, or hybrid backup solutions",
+                  "Regular DR drills and validation",
+                  "Fast data recovery and minimal downtime"
+                ],
+                "imgUrl": "/static/images/business/core-offering-3.svg"
+              },
+              {
+                "title": "24/7 IT Helpdesk Support",
+                "description": "Get round-the-clock support from certified professionals who resolve issues quickly—so your team stays productive.",
+                "points": [
+                  "Multi-channel support (email, phone, portal)",
+                  "SLA-driven response times",
+                  "End-user device troubleshooting"
+                ],
+                "imgUrl": "/static/images/business/core-offering-4.svg"
+              },
+              {
+                "title": "Security & Compliance",
+                "description": "Protect your business from ever-evolving cyber threats with our layered security approach.",
+                "points": [
+                  "Endpoint protection",
+                  "Firewall & vulnerability management",
+                  "Regulatory compliance (GDPR, HIPAA, etc.)"
+                ],
+                "imgUrl": "/static/images/business/core-offering-5.svg"
+              }
+            ]
+          }
+        },
+
+        {
+          "index": 10,
+          "type": "concurrentContent",
+          "data": {
+            "imgAlignment": "left",
+            "title": "Why Choose Us for Managed IT Services?",
+            "imgUrl": "/static/images/business/section-10.svg",
+            "bgColor": "#000000",
+            "descriptionHtml": "\n <div style='color:#EAEAEA; line-height:1.7;'>\n   <style>\n     @media (max-width: 768px) {\n       .managed-list { grid-template-columns: 1fr !important; }\n     }\n   </style>\n   <ul class='managed-list' style='list-style:none; padding:0; margin:0; display:grid; grid-template-columns:1fr 1fr; gap:18px 40px;'>\n     <li>\n       <span style='font-weight:700; color:#4DA3FF;'>✔ Proactive Monitoring & Maintenance</span>\n       <p style='margin:6px 0 0;'>We fix problems before they impact your business.</p>\n     </li>\n     <li>\n       <span style='font-weight:700; color:#4DA3FF;'>✔ Tailored Service Packages</span>\n       <p style='margin:6px 0 0;'>Choose the level of service that matches your needs and budget.</p>\n     </li>\n     <li>\n       <span style='font-weight:700; color:#4DA3FF;'>✔ Dedicated Account Management</span>\n       <p style='margin:6px 0 0;'>You'll have a single point of contact who understands your business.</p>\n     </li>\n     <li>\n       <span style='font-weight:700; color:#4DA3FF;'>✔ Scalability Built-In</span>\n       <p style='margin:6px 0 0;'>Easily add or remove services as your business grows.</p>\n     </li>\n     <li>\n       <span style='font-weight:700; color:#4DA3FF;'>✔ Proven Expertise</span>\n       <p style='margin:6px 0 0;'>Our team brings experience across industries—SMBs to enterprise-level clients.</p>\n     </li>\n   </ul>\n </div>\n "
+          }
+        },
+        {
+          "index": 11,
+          "type": "concurrentText",
+          "data": {
+            "title": "Industries We Serve",
+            "description": "Healthcare | Finance & Insurance | Manufacturing | Retail & E-commerce | Education | Public Sector"
+          }
+        },
+        {
+          "index": 12,
+          "type": "concurrentText",
+          "data": {
+            "title": "Start Managing IT Smarter",
+            "description": "Your IT systems should be an enabler—not a burden. With Technozis as your managed services partner, you gain a reliable team focused on performance, security, and your success. Contact us today to learn how we can take the complexity out of IT management.",
+            "background": "#5A3DF5",
+            "buttonText": "Let’s Talk",
+            "redirectionLink": "/contact",
+            "applyBgToParent": false
+          }
+        },
+        {
+          "index": 13,
+          "type": "concurrentContent",
+          "data": {
+            "imgAlignment": "right",
+            "imgUrl": "/static/images/business/section-13.svg",
+            "bgColor": "#6A3AF7",
+            "subTitle": "Digital Transformation Consulting Services",
+            "title": "Accelerate Innovation. Reimagine Your Business. Transform with Confidence.",
+            "descriptionHtml": "<div style='color:#EAEAEA; line-height:1.7;'>\n  <p style='margin:0 0 18px; font-size:16px;'>\n    At Technozis, we help organizations embrace digital transformation with clarity, speed, and purpose. Our consulting services are designed to guide your business through every phase of digital change—from strategy and planning to execution and continuous optimization.\n  </p>\n  <p style='margin:0; font-size:16px;'>\n    Whether you’re modernizing legacy systems, digitizing customer experiences, or rethinking your operations through automation and AI, our team delivers the expertise and roadmap to make transformation successful.\n  </p>\n</div>"
+          }
+        },
+        {
+          "index": 14,
+          "type": "concurrentText",
+          "data": {
+            "title": "What is Digital Transformation?",
+            "description": "Digital transformation is more than just adopting new technology. It’s about redefining how your business creates value in the digital age. This means improving customer experiences, streamlining operations, enabling data-driven decision-making, and building future-ready IT infrastructure."
+          }
+        },
+        {
+          "index": 15,
+          "type": "dataCards",
+          "data": {
+            "title": "Our Digital Transformation Consulting Offerings",
+            "cards": [
+              {
+                "title": "Digital Strategy & Roadmap",
+                "description": "We assess your current state and define a practical, achievable transformation strategy aligned with your business objectives.",
+                "points": [
+                  "Maturity assessments & gap analysis",
+                  "Business case development",
+                  "Digital roadmap & prioritization"
+                ],
+                "imgUrl": "/static/images/business/section-15-1.svg"
+              },
+              {
+                "title": "Cloud & Infrastructure Modernization",
+                "description": "We help you migrate, optimize, and manage workloads across public, private, or hybrid clouds—securely and cost-effectively.",
+                "points": [
+                  "Cloud readiness assessments",
+                  "Cloud migration planning (AWS, Azure, GCP)",
+                  "Infrastructure as Code & DevOps enablement"
+                ],
+                "imgUrl": "/static/images/business/section-15-2.svg"
+              },
+              {
+                "title": "Business Process Reengineering",
+                "description": "We analyze and redesign your core processes to unlock efficiency, reduce costs, and improve user satisfaction.",
+                "points": [
+                  "Process mapping & optimization",
+                  "Intelligent automation (RPA, AI, ML)",
+                  "Lean and Agile methodologies"
+                ],
+                "imgUrl": "/static/images/business/section-15-3.svg"
+              },
+              {
+                "title": "Application Modernization",
+                "description": "We enable you to modernize, re-platform, or retire legacy systems to keep pace with changing demands.",
+                "points": [
+                  "Application assessment & architecture review",
+                  "Platform upgrades & reengineering",
+                  "API enablement & microservices adoption"
+                ],
+                "imgUrl": "/static/images/business/section-15-4.svg"
+              },
+              {
+                "title": "Change Management & Adoption",
+                "description": "We focus on the human side of transformation—ensuring your people adopt new tools, processes, and ways of working.",
+                "points": [
+                  "Stakeholder engagement",
+                  "Communication and training plans",
+                  "Adoption tracking and feedback loops"
+                ],
+                "imgUrl": "/static/images/business/section-15-5.svg"
+              }
+            ]
+          }
+        },
+        {
+          "index": 16,
+          "type": "concurrentContent",
+          "data": {
+            "imgAlignment": "left",
+            "title": "Why Choose Us?",
+            "imgUrl": "/static/images/business/section-16.svg",
+            "bgColor": "#000000",
+            "descriptionHtml": "\n <div style='color:#EAEAEA; line-height:1.7;'>\n   <style>\n     @media (max-width: 768px) {\n       .chooseus-list { grid-template-columns: 1fr !important; }\n     }\n   </style>\n   <ul class='chooseus-list' style='list-style:none; padding:0; margin:0; display:grid; grid-template-columns:1fr 1fr; gap:18px 40px;'>\n     <li>\n       <span style='font-weight:700; color:#9E7BFF;'>✔ Business-First Approach</span>\n       <p style='margin:6px 0 0;'>We align technology solutions with your core business goals—not the other way around.</p>\n     </li>\n     <li>\n       <span style='font-weight:700; color:#9E7BFF;'>✔ End-to-End Delivery</span>\n       <p style='margin:6px 0 0;'>From ideation to implementation, we stay with you every step of the way.</p>\n     </li>\n     <li>\n       <span style='font-weight:700; color:#9E7BFF;'>✔ Cross-Industry Expertise</span>\n       <p style='margin:6px 0 0;'>Our consultants bring experience from healthcare, finance, manufacturing, retail, and the public sector.</p>\n     </li>\n     <li>\n       <span style='font-weight:700; color:#9E7BFF;'>✔ Agile & Scalable</span>\n       <p style='margin:6px 0 0;'>We deliver fast wins and long-term value using an agile methodology that adapts as your needs evolve.</p>\n     </li>\n     <li>\n       <span style='font-weight:700; color:#9E7BFF;'>✔ Technology-Agnostic Consulting</span>\n       <p style='margin:6px 0 0;'>We recommend what’s best for you—not what’s trending or vendor-bound.</p>\n     </li>\n   </ul>\n </div>\n "
+          }
+        },
+        {
+          "index": 17,
+          "type": "concurrentText",
+          "data": {
+            "title": "Are You Ready to Transform?",
+            "description": "Digital transformation doesn’t happen overnight—but with the right strategy and expert guidance, it doesn’t have to be overwhelming either.<br/><br/>Partner with Technozis to future-proof your business, empower your teams, and deliver measurable outcomes.",
+            "background": "#7A3DF5",
+            "buttonText": "Let’s Talk",
+            "redirectionLink": "/contact",
+            "applyBgToParent": false
+          }
+        },
+        {
+          "index": 18,
+          "type": "bannerSection",
+          "data": {
+            "title": "Let's discuss the <br/> right engagement model <br/> for your business.",
+            "buttonText": "Contact Us",
+            "buttonLink": "/contact",
+            "backgroundImage": "/static/images/business/banner-image.svg"
+          }
+        }
+      ]
+    }
+  ]
+}

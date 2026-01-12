@@ -1,0 +1,185 @@
+@import "../../../styles/variables.scss";
+
+.servicesSection {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  background: #000;
+  max-width: $website-desktop-maxwidth;
+  margin: 0 auto;
+  padding: 112px 96px;
+
+  .card {
+    flex: 1;
+    background: #111;
+    color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    position: relative;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    .content {
+      width: 60%;
+
+      h2 {
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+
+      p { 
+        font-size: 14px;
+        margin: 0.8rem 0 1.2rem;
+      }
+
+      .activeBtn {
+        background: #fff;
+        color: #000;
+        padding: 0.6rem 1.2rem;
+        border-radius: 999px;
+        border: none;
+        font-size: 0.9rem;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+        transition: all 0.2s ease;
+        position: absolute;
+        bottom: 20px;
+
+        span {
+          transition: transform 0.2s ease;
+        }
+
+        &:hover {
+          span {
+            transform: translateX(3px);
+          }
+        }
+      }
+
+      .btn {
+        position: absolute;
+        bottom: 20px;
+        border: 1px solid #fff;
+        padding: 0.6rem 1.2rem;
+        border-radius: 999px;
+        span {
+          transition: transform 0.2s ease;
+          font-size: 0.8rem;
+          font-weight: 600;
+        }
+      }
+    }
+    .imageWrapper {
+      border-radius: 12px;
+      margin-left: 20px;
+      width: 40%;
+
+      img {
+        border-radius: 12px;
+        object-fit: cover;
+        height: 100%;
+      }
+    }
+
+    &.active {
+      background: #0057ff; // Blue highlight for active/hover
+      flex: 2;
+    }
+  }
+}
+
+$bg: #0b0b0f; // page background
+$card: #edf0f8; // soft lavender card
+$ink: #101316; // headings
+$muted: #3f4650; // body text
+$accent: #6d5bff; // checkmark
+
+.offeringsWrapper {
+  background: $bg;
+  color: #fff;
+  padding: 64px 20px;
+
+  .inner {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .title {
+      text-align: center;
+      font-weight: 800;
+      font-size: 34px;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      margin-bottom: 36px;
+    }
+
+    .flexbox {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+
+      .card {
+        background: $card;
+        color: $ink;
+        border-radius: 18px;
+        padding: 26px 26px 24px;
+        box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.06),
+          0 10px 18px rgba(0, 0, 0, 0.08);
+
+        display: flex;
+        flex-direction: column;
+        max-width: calc(33.333% - 20px);
+        flex: 1 1 calc(50% - 28px);
+
+        .cardTitle {
+          margin: 0 0 10px;
+          font-size: 22px;
+          font-weight: 800;
+          letter-spacing: -0.01em;
+          line-height: 1.25;
+        }
+
+        .cardDesc {
+          margin: 0 0 18px;
+          color: $muted;
+          font-size: 15.5px;
+          line-height: 1.65;
+        }
+
+        .list {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+
+          li {
+            position: relative;
+            padding-left: 24px;
+            margin-bottom: 12px;
+            font-size: 15.5px;
+            color: $ink;
+
+            &::before {
+              content: "✔";
+              position: absolute;
+              left: 0;
+              top: 0;
+              font-weight: 700;
+              transform: translateY(2px);
+              color: #8a38f5 !important;
+              font-family: Arial, sans-serif;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@import "./device.module.scss";

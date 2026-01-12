@@ -1,0 +1,336 @@
+{
+  "data": [
+    {
+      "pageName": "serviceNow",
+      "redirectionUrl": "/services/service-now",
+      "sections": [
+        {
+          "index": 1,
+          "type": "primaryData",
+          "data": {
+            "main": {
+              "title": "<h2>Evaluate and Optimize <br />Your Workflows with ServiceNow<h2/>",
+              "description": "Align your digital workflows with business outcomes, gain actionable insights through <br />performance analytics, and continuously improve service delivery using ServiceNow’s <br />intelligent automation and AI-powered platform.",
+              "subTitle": "The Leading Platform for Enterprise AI and Automation",
+              "buttonTxt": "",
+              "bgMainImg": {
+                "desktop": "/static/images/servicenow-hero.png"
+              },
+              "titleSize": ""
+            }
+          }
+        },
+        {
+          "index": 3,
+          "type": "concurrentContent",
+          "data": {
+            "imgAlignment": "right",
+            "title": "Rigorous Evaluation, Real ITSM Intelligence",
+            "imgUrl": "/static/images/sn-media-1.png",
+            "descriptionHtml": "<p style=\"margin-bottom: 16px; color: #ccc;\">Unlock the full potential of your IT services with intelligent, data-driven insights powered by ServiceNow.</p><p style=\"margin-bottom: 16px; color: #ccc;\">With Performance Analytics and Now Assist for ITSM, ServiceNow enables comprehensive evaluation of incident trends, service effectiveness, and resolution reliability. Leverage predictive intelligence and AI-driven recommendations to continuously improve service delivery, reduce MTTR, and enhance user satisfaction.</p><p style=\"color: #ccc;\">Transform operational insights into measurable IT performance gains—all on the trusted Now Platform.</p>",
+            "bgColor": "rgba(0, 0, 0, 1)"
+          }
+        },
+        {
+          "index": 4,
+          "type": "flipCards",
+          "data": {
+            "bgColor": "rgba(0, 52, 228, 1)",
+            "iconBgColor": "rgba(35, 136, 255, 0.17)",
+            "header": "A comprehensive analysis approach",
+            "subHeader": "Leverage ServiceNow’s enterprise-grade AI and automation to thoroughly evaluate and enhance your workflow intelligence across the Now Platform.",
+            "btnCongig": {
+              "text": "",
+              "redirection": ""
+            },
+            "cardsData": [
+              {
+                "id": 1,
+                "icon": "/static/images/services/servicenow/approach-icon-3.svg",
+                "label": "End-to-End ServiceNow Deployment",
+                "description": "Comprehensive implementation services to configure, customize, and deploy ServiceNow solutions that align with your unique business processes and goals."
+              },
+              {
+                "id": 2,
+                "icon": "/static/images/services/servicenow/approach-icon-2.svg",
+                "label": "ServiceNow Optimization & Performance Tuning",
+                "description": "Analyze and fine-tune your existing ServiceNow environment to boost system performance, reduce technical debt, and enhance overall platform efficiency."
+              },
+              {
+                "id": 3,
+                "icon": "/static/images/services/servicenow/approach-icon-1.svg",
+                "label": "AI-Driven Workflow Automation",
+                "description": "Leverage ServiceNow’s AI capabilities to automate routine tasks, improve decision-making, and enable predictive service delivery across the enterprise."
+              }
+            ]
+          }
+        },
+        {
+          "index": 5,
+          "type": "quickViewCards",
+          "data": {
+            "header": "Our ServiceNow Capabilities",
+            "bgColor": "#000000",
+            "iconBgColor": "#1a1a1a",
+            "detailsTiles": [
+              {
+                "icon": "/static/images/services/servicenow/capability-1.svg",
+                "label": "IT Operations & Asset Management",
+                "description": "Optimize your IT landscape with deep expertise in ITOM, CMDB, Discovery, and IT Asset Management. Gain real-time visibility, automate issue resolution, and drive operational efficiency at scale."
+              },
+              {
+                "icon": "/static/images/services/servicenow/capability-2.svg",
+                "label": "Performance Analytics & APM",
+                "description": "Leverage ServiceNow APM and Performance Analytics to track KPIs, evaluate app value, and align your digital investments with business outcomes. Improve strategic planning and reduce tech debt."
+              },
+              {
+                "icon": "/static/images/services/servicenow/capability-3.svg",
+                "label": "HR & Workplace Experience",
+                "description": "Deliver seamless employee services through HRSD and Workplace Service Delivery. From onboarding to space management, boost engagement and productivity across the workforce."
+              },
+              {
+                "icon": "/static/images/services/servicenow/capability-4.svg",
+                "label": "Customer & Field Service Management",
+                "description": "Transform service delivery with powerful tools for Customer and Field Service Management. Route tasks smartly, manage mobile workforces, and resolve customer issues faster and smarter."
+              },
+              {
+                "icon": "/static/images/services/servicenow/capability-5.svg",
+                "label": "Risk, Compliance & Procurement Ops",
+                "description": "Strengthen your enterprise governance with IRM, supplier operations, business continuity, and procurement automation. Manage risk proactively while improving vendor and finance workflows."
+              },
+              {
+                "icon": "/static/images/services/servicenow/capability-6.svg",
+                "label": "App Engine, Automation & Integration",
+                "description": "Accelerate innovation using App Engine Studio, low-code tools, and Integration Hub. Deploy ERP workflows, automate tasks with RPA, and seamlessly connect with enterprise systems."
+              }
+            ]
+          }
+        },
+        {
+          "index": 7,
+          "type": "stepperContent",
+          "data": {
+            "heading": "Your ServiceNow journey begins with smart, scalable strategy",
+            "steps": [
+              {
+                "icon": "/static/images/services/servicenow/stepper-icon-1.svg",
+                "title": "Solution assessment & strategy",
+                "description": "Our experts begin with a thorough evaluation of your current ServiceNow environment, identifying key opportunities and recommending an optimal path forward tailored to your business goals."
+              },
+              {
+                "icon": "/static/images/services/servicenow/stepper-icon-2.svg",
+                "title": "Defining scope of work",
+                "description": "We work closely with stakeholders to define a clear scope—detailing objectives, timelines, and measurable outcomes—ensuring alignment from day one."
+              },
+              {
+                "icon": "/static/images/services/servicenow/stepper-icon-3.svg",
+                "title": "Solution offering & delivery roadmap",
+                "description": "Based on the defined scope, we craft a customized solution and phased delivery roadmap, helping you visualize progress while staying agile and outcome-driven."
+              },
+              {
+                "icon": "/static/images/services/servicenow/stepper-icon-4.svg",
+                "title": "Scale as you need",
+                "description": "Whether you're rolling out to a single department or scaling enterprise-wide, our flexible approach lets you grow at your pace—with built-in readiness for future expansion."
+              }
+            ]
+          }
+        },
+        {
+          "index": 10,
+          "type": "concurrentContent",
+          "data": {
+            "imgAlignment": "right",
+            "title": "Join Our Growing ServiceNow Community",
+            "imgUrl": "/static/images/sn-media-2.png",
+            "descriptionHtml": "<p style=\"margin-bottom: 16px; color: #ccc;\">Our ecosystem goes beyond project work. We have built a strong community of ServiceNow enthusiasts — a space where professionals share knowledge, explore trends, and connect over coffee (virtual or real).</p><a href=\"https://chat.whatsapp.com/Bu7OFoBvzV77wVNKyoiUjA\" target=\"_blank\" style=\"display: inline-block; margin-top: 1rem; background: linear-gradient(90deg, #5B8CFF, #7BA8FF); padding: 0.75rem 1.5rem; border-radius: 999px; color: white; text-decoration: none; font-weight: 500; margin-bottom: 20px; cursor: pointer; \">Join The Community →</a>",
+            "bgColor": "#0046FF"
+          }
+        }
+      ]
+    },
+    {
+      "pageName": "dataAnalytics",
+      "redirectionUrl": "/services/data-analytics",
+      "sections": [
+        {
+          "index": 1,
+          "type": "primaryData",
+          "data": {
+            "main": {
+              "title": "<h2>Data Analytics, Data <br />Science And Business <br />Intelligence<h2/>",
+              "description": "At Technozis, we help organizations harness the full power<br/> of Salesforce to drive growth, improve customer relationships, <br/>and streamline operations.",
+              "subTitle": "",
+              "buttonTxt": "Let’s Work Together",
+              "bgMainImg": {
+                "desktop": "/static/images/services/data-analytics/hero-image.svg",
+                "mobile": "/static/images/services/data-analytics/hero-image-mobile.svg"
+              },
+              "titleSize": ""
+            }
+          }
+        },
+        {
+          "index": 2,
+          "type": "concurrentContent",
+          "data": {
+            "imgAlignment": "left",
+            "title": "What is INSIGHTS FACTORY?",
+            "imgUrl": "/static/images/services/data-analytics/section-2.svg",
+            "descriptionHtml": "<p style=\"margin-bottom: 16px; color: #ccc;\">Insights Factory is Technozis’ innovative solution that transforms raw operational data into real-time, actionable insights using Generative AI and advanced analytics. It enables enterprises to optimize processes, reduce manual reporting effort, and improve decision-making across the supply chain and beyond.</p><p style=\"color: #ccc;\">By combining dashboards with conversational AI, we empower stakeholders to ask business-critical questions in natural language—and receive insightful, predictive answers instantly.</p>",
+            "bgColor": "rgba(0, 0, 0, 1)"
+          }
+        },
+        {
+          "index": 3,
+          "type": "quickViewCards",
+          "data": {
+            "header": "Why Businesses Need It",
+            "description": "Traditional reporting systems are slow, siloed, and often fail to surface insights when they're needed most. Insights Factory solves these problems. Eliminating data silos through centralized intelligence.",
+            "bgColor": "#0046E8",
+            "iconBgColor": "rgba(255, 255, 255, 0.12)",
+            "cardHoverColor": "rgba(255, 255, 255, 0.12)",
+            "columnsNumber": 4,
+            "descriptionSize": "50px",
+            "detailsTiles": [
+              {
+                "icon": "/static/images/services/data-analytics/section-3-icon-1.svg",
+                "label": "Cutting manual reporting time by",
+                "description": "25%"
+              },
+              {
+                "icon": "/static/images/services/data-analytics/section-3-icon-2.svg",
+                "label": "Improving forecast accuracy by",
+                "description": "30%"
+              },
+              {
+                "icon": "/static/images/services/data-analytics/section-3-icon-3.svg",
+                "label": "Reducing inventory holding costs by",
+                "description": "15%"
+              },
+              {
+                "icon": "/static/images/services/data-analytics/section-3-icon-4.svg",
+                "label": "Responding to disruptions faster by",
+                "description": "20%"
+              }
+            ]
+          }
+        },
+        {
+          "index": 4,
+          "type": "infoShowcase",
+          "data": {
+            "title": "Key Focus Areas",
+            "image": {
+              "desktop": "/static/images/services/data-analytics/circular-media.svg",
+              "mobile": "/static/images/services/data-analytics/circular-media-mobile.svg"
+            },
+            "data": [
+              {
+                "title": "Customer Experience",
+                "description": "Complaint root cause, delivery performance"
+              },
+              {
+                "title": "Sales & Marketing",
+                "description": "Campaign ROI, churn prediction"
+              },
+              {
+                "title": "Maintenance",
+                "description": "Predictive failures, spare optimization"
+              },
+              {
+                "title": "Safety & Compliance",
+                "description": "Incident trends, risk predictors"
+              },
+              {
+                "title": "Demand Planning",
+                "description": "Forecast accuracy, promotion effectiveness"
+              },
+              {
+                "title": "Procurement",
+                "description": "Spend optimization, supplier risk"
+              },
+              {
+                "title": "Procurement",
+                "description": "Spend optimization, supplier risk"
+              },
+              {
+                "title": "Warehousing",
+                "description": "Space utilization, inventory efficiency"
+              }
+            ]
+          }
+        },
+        {
+          "index": 5,
+          "type": "stepperContent",
+          "data": {
+            "heading": "How We Implement It – 4 Simple Steps",
+            "subHeading": "Our 4-step implementation process ensures low risk, high ROI—guided by domain experts and leading AI tools.",
+            "sectionHeight": "150px",
+            "steps": [
+              {
+                "icon": "/static/images/services/servicenow/stepper-icon-1.svg",
+                "title": "Identify Insight Gaps",
+                "description": "Domain workshops, analytics audits"
+              },
+              {
+                "icon": "/static/images/services/servicenow/stepper-icon-2.svg",
+                "title": "Gather & Improve Data",
+                "description": "Tools: Alteryx, Talend, Informatica"
+              },
+              {
+                "icon": "/static/images/services/servicenow/stepper-icon-3.svg",
+                "title": "Enhance/Create Dashboards",
+                "description": "Power BI, Tableau, DOMO"
+              },
+              {
+                "icon": "/static/images/services/servicenow/stepper-icon-4.svg",
+                "title": "Deploy Conversational AI",
+                "description": "ChatGPT, Gemini, Ollama"
+              }
+            ]
+          }
+        },
+        {
+          "index": 6,
+          "type": "concurrentText",
+          "data": {
+            "title": "Ready to Transform Your Data into Decisions?",
+            "description": "With cutting-edge technology, agile execution, and a people-first approach, Technozis is your trusted partner in growth. Let’s build something incredible together.",
+            "background": "#0046E8",
+            "buttonText": "Get Started",
+            "redirectionLink": "/contact",
+            "applyBgToParent": true
+          }
+        },
+        {
+          "index": 7,
+          "type": "quickViewCards",
+          "data": {
+            "header": "Other Services We Provide",
+            "subHeader": "We believe people grow best where they are challenged, supported, and inspired. At Technozis, you’ll find more than what you need—you’ll find purpose.",
+            "bgColor": "#000000",
+            "iconBgColor": "rgba(255, 255, 255, 0.12)",
+            "detailsTiles": [
+              {
+                "icon": "/static/images/services/data-analytics/section-7-icon-1.svg",
+                "label": "ServiceNow",
+                "description": "Work with global clients across industries and geographies."
+              },
+              {
+                "icon": "/static/images/services/data-analytics/section-7-icon-2.svg",
+                "label": "Oracle",
+                "description": "Access mentorship, certifications, and hands-on training."
+              },
+              {
+                "icon": "/static/images/services/data-analytics/section-7-icon-3.svg",
+                "label": "Cloud And Infra",
+                "description": "Deliver impactful work that drives business transformation."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

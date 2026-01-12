@@ -1,0 +1,17 @@
+.buttonContainer {
+  height: 50px;
+  padding: 16px 24px;
+  border-radius: 8px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  border: 1px solid #2e6edf;
+  color: #262626;
+
+  &.full {
+    width: 100%;
+  }
+}

@@ -1,0 +1,501 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/mixins.scss";
+
+.pathWrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+
+  .stepContainer {
+    padding: 2rem;
+    border-radius: 12px;
+    gap: 2rem;
+  }
+
+  .leftSection {
+    display: flex;
+    gap: 1.5rem;
+    flex: 1;
+  }
+
+  .iconCircle {
+    border: 2px solid rgba(35, 136, 255, 1);
+    border-radius: 50%;
+    display: flex;
+    width: 45px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    color: #2f80ed;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .textContent {
+    h3 {
+      margin: 0;
+      color: #fff;
+      font-size: 20px;
+      font-weight: 600;
+    }
+    p {
+      margin: 0;
+      color: rgba(255, 255, 255, 0.75);
+      font-size: 14px;
+    }
+  }
+
+  .rightSection {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    img {
+      width: 516px;
+      height: 334px;
+      border-radius: 12px;
+    }
+  }
+
+  .viewJobs {
+  }
+}
+
+.openPostionContainer {
+  padding: $slice-padding-desktop;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  max-width: $website-desktop-maxwidth;
+
+  .openPositionHeading {
+    font-size: 38px;
+    font-weight: 600;
+  }
+  .openPositionSubHeading {
+    font-size: 16px;
+    margin: 24px 0 64px;
+  }
+}
+
+.cardGrid {
+  display: flex;
+  flex-wrap: wrap; /* allow wrapping to next row */
+  gap: 20px;
+
+  .card {
+    flex: 1 1 calc(50% - 10px); /* 2 cards per row */
+    max-width: calc(50% - 10px);
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 16px;
+    border: 2px solid #333;
+    color: #fff;
+    box-shadow: 0 0 0 1px #2c2c2c;
+    transition: background 0.3s;
+
+    &:hover {
+      background: #282828;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+    }
+    .description {
+      font-size: 0.95rem;
+      color: #ccc;
+      margin-bottom: 1rem;
+      max-width: 90%;
+    }
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.9rem;
+      color: #b0b0b0;
+      margin-bottom: 1.5rem;
+      span {
+        padding-left: 10px;
+        border-left: 2px solid #2388ff;
+      }
+    }
+    .applyBtn,
+    .viewJobBtn {
+      border-radius: 20px;
+      padding: 8px 20px;
+      font-size: 0.95rem;
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+      transition: background 0.2s ease-in;
+      cursor: pointer;
+    }
+    .applyBtn {
+      background: #0057ff;
+      color: #fff;
+      &:hover {
+        background: #0044cc;
+      }
+    }
+    .viewJobBtn {
+      margin-left: 20px;
+      border: 2px solid #fff;
+      &:hover {
+        background: #717172;
+      }
+    }
+  }
+}
+
+.opportunititesPage {
+  background: url("/static/images/opportunitiesHeroBanner.svg") no-repeat;
+  margin-top: 72px;
+
+  .opportunitiesHero {
+    height: calc(100vh - 72px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    .heading {
+      font-weight: 600;
+      font-size: 60px;
+      line-height: 100%;
+      letter-spacing: 2%;
+      z-index: 5;
+    }
+    .subHeading {
+      margin: 32px 0 100px;
+      z-index: 5;
+    }
+    .avatarWrapper {
+      position: absolute;
+      bottom: 0;
+    }
+  }
+}
+
+.avatarWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 60px auto;
+  flex-wrap: wrap;
+  max-width: $website-desktop-maxwidth;
+
+  .avatarContainer {
+    &:hover {
+      transform: scale(1.05) !important;
+      transition: 0.5s;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.3);
+      border-radius: 16px;
+      width: 240px;
+      height: 240px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      position: relative;
+      transition: transform 0.3s ease;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    &:hover .label {
+      display: flex;
+      background: rgba(35, 136, 255, 1);
+      width: 80%;
+      margin: -20px auto 0;
+      border-radius: 20px;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 10px;
+      font-size: 12px;
+      transition: 0.5s;
+    }
+    .label {
+      display: none;
+    }
+  }
+}
+
+.jobDescriptionContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .card {
+    color: white;
+    width: 100%;
+    position: relative;
+    .title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-top: 20px;
+    }
+    .subheading,
+    .roleTitle,
+    .sectionTitle {
+      margin-top: 1.5rem;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+    .text,
+    .list {
+      margin-top: 0.5rem;
+      font-size: 0.95rem;
+    }
+    .list li {
+      margin-bottom: 0.4rem;
+      list-style: disc;
+    }
+    .list ul {
+      margin-left: 1rem;
+    }
+    .footer {
+      margin-top: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      font-size: 0.85rem;
+      span {
+        padding: 0 10px 0 5px;
+        margin-right: 5px;
+        border-left: 2px solid white;
+        font-weight: 500;
+      }
+      .applyBtn {
+        background: rgba(64, 103, 235, 1);
+        border: none;
+        padding: 0.6rem 1.4rem;
+        border-radius: 9999px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: 0.3s;
+        margin-left: auto;
+        &:hover {
+          background: #8e91ff;
+        }
+      }
+    }
+  }
+}
+
+.jobApplicationWrapper {
+  .topSection {
+    height: 300px;
+    background: rgba(0, 52, 228, 1);
+    padding: 2rem;
+    .topSectionWrapper {
+      max-width: $website-desktop-maxwidth;
+      margin: 0 auto;
+      padding: $slice-padding-desktop;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .left {
+        h1 {
+          font-size: 1.5rem;
+          font-weight: bold;
+          margin-bottom: 0.5rem;
+        }
+        .meta {
+          display: flex;
+          gap: 1rem;
+          span {
+            font-size: 0.9rem;
+            border-left: 2px solid rgba(255, 255, 255, 0.5);
+            padding-left: 0.5rem;
+          }
+        }
+      }
+      .right .viewJobCta {
+        color: #fff;
+        font-size: 0.9rem;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .formWrapper {
+    margin: 80px auto;
+    max-width: 600px;
+    h2 {
+      font-size: 38px;
+      font-weight: 600;
+      padding-left: 20px;
+    }
+    p {
+      font-style: italic;
+      font-size: 14px;
+      padding: 5px 20px;
+    }
+    .formContainer {
+      color: #fff;
+      padding: 20px;
+      label {
+        font-weight: 500;
+        margin: 1rem 0 5px;
+        display: block;
+      }
+      input,
+      select,
+      textarea {
+        width: 100%;
+        padding: 0.8rem;
+        margin-bottom: 0.25rem;
+        border: none;
+        border-bottom: 4px solid #444;
+        background: #000;
+        color: #fff;
+        &:focus {
+          outline: none;
+          border-bottom: 4px solid rgba(35, 136, 255, 1);
+        }
+      }
+      .error {
+        color: red;
+        font-size: 0.75rem;
+        margin-bottom: 1rem;
+      }
+      .checkbox {
+        /* Use a 2-column grid so checkbox and label align predictably */
+        display: grid;
+        grid-template-columns: 32px 1fr;
+        align-items: start; /* align checkbox top with multi-line label */
+        margin: 14px 0; /* vertical spacing between checkbox rows */
+
+        /* ensure the checkbox itself has predictable size and no odd transforms */
+        input[type="checkbox"] {
+          width: 18px;
+          height: 18px;
+          margin: 3px 0 0 0; /* slight nudge so box vertically centers with label first line */
+          padding: 0;
+          cursor: pointer;
+          appearance: auto; /* keep default OS style unless you want a custom look */
+        }
+
+        /* label: allow wrapping and keep good line-height */
+        label {
+          display: block;
+          margin: 0;
+          line-height: 1.4;
+          font-size: 16px;
+          white-space: normal; /* allow wrap */
+          word-break: break-word;
+          cursor: pointer;
+        }
+      }
+      .submitBtn {
+        background: #0066ff;
+        color: #fff;
+        padding: 8px 60px;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        margin-top: 20px;
+      }
+      .fileUploadBox {
+        background: #1e1e1e;
+        padding: 1rem;
+        border-radius: 6px;
+        margin-bottom: 1rem;
+      }
+      .uploadedText {
+        color: #aaa;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+.submissionSuccessWrapper {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  .submissionSuccessCard {
+    background: #0050ff;
+    position: relative;
+    border-radius: 24px;
+    padding: 40px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1000px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    gap: 40px;
+    .submissionSuccessLeft {
+      flex: 1;
+      width: 60%;
+      z-index: 1;
+      h1 {
+        font-size: 32px;
+        font-weight: 800;
+        margin-bottom: 20px;
+      }
+      p {
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+        strong {
+          font-weight: 700;
+          font-style: italic;
+        }
+      }
+    }
+    .submissionSuccessRight {
+      flex-shrink: 0;
+      width: 40%;
+      img {
+        max-width: 280px;
+        height: auto;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+    }
+  }
+}
+
+.loaderOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .loader {
+    width: 60px;
+    height: 60px;
+    border: 6px solid #0070f3;
+    border-top: 6px solid transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@import "./device.module.scss";

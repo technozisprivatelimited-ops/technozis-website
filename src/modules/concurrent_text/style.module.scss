@@ -1,0 +1,74 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+$primary-color: #fff;
+
+.concurrentText {
+
+  .content {
+    display: flex;
+    margin: 0 auto;
+    max-width: $website-desktop-maxwidth;
+    column-gap: 40px;
+
+    &.withBg {
+      border-radius: 20px;
+    }
+
+    .title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      flex: 0 0 45%;
+    }
+
+    .description {
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .button {
+      background-color: $primary-color;
+      color: #000;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: darken($primary-color, 10%);
+      }
+    }
+  }
+}
+
+@include from-tablet {
+  .concurrentText {
+    &.childBg {
+      padding: $slice-padding-desktop;
+    }
+    .content {
+      padding: $slice-padding-desktop;
+      margin: 0 96px;
+
+      &.withBg {
+        padding: 56px;
+      }
+    }
+  }
+}
+
+@include for-phone {
+  .concurrentText {
+    padding: $slice-padding-phone;
+    .content {
+      flex-direction: column;
+
+    &.withBg {
+      padding: 32px;
+    }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
+
+.featurePointersMain {
+  .featurePointersContainer {
+    max-width: $website-desktop-maxwidth;
+    margin: 0 auto;
+    color: #000;
+    // // padding: $slice-padding-desktop-2;
+  }
+
+  .heading {
+    font-size: 30px;
+    line-height: 39px;
+    font-weight: 500;
+    margin-bottom: 40px;
+  }
+
+  .featurePointersWrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+
+    .featureCard {
+      display: flex;
+      padding: 15px;
+      column-gap: 20px;
+      align-items: center;
+
+      p {
+        font-size: 16px;
+        font-weight: 500;
+      }
+    }
+
+    .icon {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+@include for-phone {
+  .featurePointersMain {
+    padding: $slice-padding-phone;
+
+    .featurePointersWrapper {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@include from-tablet {
+  .featurePointersMain {
+    .featurePointersContainer {
+      padding: $slice-padding-desktop;
+    }
+
+    .heading {
+      font-size: 46px;
+      margin-bottom: 80px;
+      max-width: 768px;
+    }
+
+    .featurePointersWrapper {
+      margin: 0 auto;
+      max-width: $website-desktop-maxwidth;
+    }
+  }
+}
